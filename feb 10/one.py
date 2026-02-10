@@ -57,3 +57,24 @@ if entered_pin == pin:
 # Please select an option: 3
 # Enter the amount to deposit: 1000000000000000
 # You have deposited $1000000000000000. Your new balance is: $1000000000010000
+
+def student_info(**data):
+    print(data)
+    for key, value in data.items():
+        print(key,"=",value)
+
+student_name = input("Enter student name: ")
+student_age = input("Enter student age: ")
+student_ph=input("Enter student phone number: ")
+student_info(name=student_name, age=student_age, phone=student_ph)
+
+#output
+# Enter student name: Chethan
+# Enter student age: 18
+# Enter student phone number: 123456789
+# {'name': 'Chethan', 'age': '18', 'phone': '123456789'}
+# name = Chethan
+# age = 18
+# phone = 123456789
+
+
